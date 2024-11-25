@@ -12,7 +12,10 @@ namespace SubtypeCovariance
         // **** This method should generate an error which you need to fix ****
         public virtual Entity GetByID(Guid id)
         {
-            return new Entity(id);
+            return new Entity(id)
+            {
+                Name = "Default Name"
+            };
         }
     }
 }
